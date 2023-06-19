@@ -49,7 +49,7 @@ def select_user(name: str) -> sqlalchemy.orm.query.Query:
         user (User) -- registered user infomation.
     """
     print(name)
-    user = db.session.query(User).filter_by(name=name).all()
+    user = db.session.query(User).filter_by(name=name)
     return user
 
 

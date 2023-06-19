@@ -37,8 +37,8 @@ class UserHasGame(Base):
     __tablename__ = 'user_has_game'
     __table_args__ = {'extend_existing': True}
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
-    user_id = Column(Integer, ForeignKey('users.id'), primary_key=True)
-    game_id = Column(Integer, ForeignKey('games.id'), primary_key=True)
+    user_id = Column(Integer, ForeignKey('users.id'))
+    game_id = Column(Integer, ForeignKey('games.id'))
     rate = Column(Integer)
     review = Column(String(255))
     user = relationship("User", back_populates="userhasgame")
