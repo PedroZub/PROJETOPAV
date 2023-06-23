@@ -1,6 +1,6 @@
 import sys
 import requests
-from PySide6.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton
+from PySide6.QtWidgets import QApplication, QWidget
 from PySide6.QtCore import QPropertyAnimation, QEasingCurve
 from ui_form import Ui_Widget
 
